@@ -315,7 +315,6 @@ class adminModel extends Model
 		$date = date('Y-m-d');
 		$time = date('H:i:s');
 		$sql = "INSERT INTO transaction (userID, trxDate, trxTime, trxType, trxReference, trxAmount, trxInfo) VALUES ( '$uID', '$date', '$time', 'cash', '$cashAccount', '$cashAmount', '$cashNote')";
-        echo "***\n".$sql."\n***n";
 		return $this->db->execute($sql);
 	}
   
