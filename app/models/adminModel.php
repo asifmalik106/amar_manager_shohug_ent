@@ -302,6 +302,12 @@ class adminModel extends Model
 		return $this->db->fetch($sql);
 	}
 
+    public function getCashAccountByName($cashAccountName){
+        $this->db->selectDB($_SESSION['data']['businessDBName']);
+        $sql = "SELECT accountID from account where accountType = 'cash' AND accountName = '$cashAccountName'";
+        return $this->db->fetch($sql);
+
+    }
 	public function addCash($cashAccount, $cashAmount, $cashNote){
 		$this->db->selectDB($_SESSION['data']['businessDBName']);
 		$uID = $_SESSION['data']['userID'];

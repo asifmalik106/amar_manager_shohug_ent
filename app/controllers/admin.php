@@ -2893,8 +2893,10 @@ class admin extends Controller
 						$result = $dashModel->isUniqueCashAccount($cashName);
 						if(($result->num_rows)==0)
 						{
-							$result = $dashModel->addCashAccount($cashName);
-							//$result = $dashModel->addCash($cashAccount, $cashAmount, $cashNote);
+                            $result = $dashModel->addCashAccount($cashName);
+                            $result = $dashModel->getCashAccountByName($cashName);
+                            print_r$result->fetch_assoc();
+							$result = $dashModel->addCash($cashAccount, $cashAmount, $cashNote);
 							if($result)
 							{
 								echo "true";
