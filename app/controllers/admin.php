@@ -2985,14 +2985,15 @@ class admin extends Controller
 						$desAccount = Validation::verify($_POST['dAccount']);
 						$desAmount  = Validation::verify($_POST['dAmount']);
 						$cashNote   = Validation::verify($_POST['cNote']);
-						$cashNote   = "Cash Transfer: ".$cashNote; 
-						$this->load->model('adminModel');
+                        $cashNoteFrom   = "Cash Transfer Out: ".$cashNote;
+                        $cashNoteTo   = "Cash Transfer In: ".$cashNote;
+                        $this->load->model('adminModel');
 						$dashModel = new adminModel();
 						$sourceBalance = $dashModel->getCashAccountBalance($sourceAccount)->fetch_assoc();
 						if($sourceAccount != $desAccount && $sourceBalance['balance'] >= $desAmount)
 						{
-							$resultSource = $dashModel->addCash($sourceAccount, ($desAmount*(-1)), $cashNote);
-							$resultDestination = $dashModel->addCash($desAccount, $desAmount, $cashNote);
+							$resultSource = $dashModel->addCash($sourceAccount, ($desAmount*(-1)), $cashNoteFrom);
+							$resultDestination = $dashModel->addCash($desAccount, $desAmount, $cashNoteTo);
 							if($resultSource && $resultDestination)
 							{
 								echo "true";
