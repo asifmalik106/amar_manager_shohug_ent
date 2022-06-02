@@ -1,0 +1,9 @@
+@font-face { 
+    font-family: SolaimanLipi; 
+    src: local('SolaimanLipi'),
+         url('../fonts/bn/solaimanlipi.woff') format('woff'),
+         url('../fonts/bn/solaimanlipi.woff2') format('woff2');
+    }
+body{
+font-family: 'Merriweather','SolaimanLipi',sans-serif;
+}

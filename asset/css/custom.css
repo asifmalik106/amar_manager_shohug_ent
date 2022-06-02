@@ -1,0 +1,225 @@
+/*
+	incresome Retail Manager
+	Custom CSS
+	Asif Malik
+	20-09-2016
+*/
+
+.login-area{
+	margin: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-default .navbar-brand {
+    font-size: 25px;
+    color: #eee;
+}
+.navbar-default .navbar-brand:hover {
+    font-size: 25px;
+    color: #fff;
+}
+.custom-top{
+	background-color: #337ab7;
+}
+
+.user {
+    text-decoration: none;
+    background-color: #337ab7;
+    color: #eee;
+}
+.nav>li>a.user:focus, .nav>li>a.user:hover {
+    text-decoration: none;
+    background-color: #337ab7;
+    color: #fff;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.custom-table-height{
+    height: 600px !important;
+}
+.input-sale-qty{
+    width: 60px;
+}
+.input-sale{
+    width: 150px;
+}
+
+.input-saled-qty{
+    width: 55px;
+}
+.input-saled{
+    width: 90px;
+}
+
+.info-div {
+    background-color: #eee;
+    position: relative;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+
+.stockBody {
+    display:block;
+    height:100px;
+    overflow:auto;
+}
+.stockHead, .stockBody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.stockHead {
+    width: calc( 100% - 1em )
+}
+
+.delete{
+    padding: 5px;
+    color: red;
+}
+.red-text{
+    padding: 5px;
+    color: red;
+}
+.yellow-text{
+    padding: 5px;
+    color: #f0ad4e;
+}
+
+.edit{
+    padding: 5px;
+    color: green;
+}
+.green-text{
+	  padding: 5px;
+    color: green;
+}
+
+.reloadCategory{
+        margin: 12px;
+}
+.catStatusHeight{
+    height: 60px;
+}
+.loadingCategoryStyle{
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-left: 12px;
+}
+textarea {
+   resize: none;
+}
+
+.mouseHover:hover {
+    background-color: #eee;
+    cursor:pointer;
+}
+.cashLeft{
+    text-align: right;
+}
+.invoice-md{
+    font-size: 16px;
+}
+
+.invoice-lg{
+    font-size: 18px;
+}
+.invoice-amount{
+    text-align: right;
+}
+
+div .invoice-md td{
+    padding-left: 12px;
+    padding-top: 5px; 
+}
+table.invoice-md{
+    padding-right: 100px;
+}
+.invoiceSummary{
+    text-align: right;
+}
+
+#portamento_container {
+    float:right; 
+    position:relative;
+}
+
+#portamento_container #slidePanel {
+    float:none; 
+    position:absolute;
+}
+
+#portamento_container #slidePanel.fixed {
+    position:fixed;
+}
+
+tr.ebmDanger{
+	background-color: #ffcdd2;
+}
+tr.ebmWarning{
+	background-color: #fff59d;
+}
+tr.ebmSuccess{
+	background-color: #c8e6c9;
+}
+td{
+	background-color: transparent;
+}
++table {
+  border: 0.5px solid #000000;
+}
++table-bordered > thead > tr > th,
++table-bordered > tbody > tr > th,
++table-bordered > tfoot > tr > th,
++table-bordered > thead > tr > td,
++table-bordered > tbody > tr > td,
++table-bordered > tfoot > tr > td {
+   border: 0.5px solid #000000;
+}
+.productTable{
+	padding-left: 10px;	
+}
+code,
+kbd,
+pre,
+.img-rounded,
+.img-thumbnail,
+.img-circle,
+.form-control,
+.btn,
+.btn-link,
+.dropdown-menu,
+.list-group-item,
+.input-group-addon,
+.input-group-btn,
+.nav-tabs a,
+.nav-pills a,
+.navbar,
+.navbar-toggle,
+.icon-bar,
+.breadcrumb,
+.pagination,
+.pager *,
+.label,
+.badge,
+.jumbotron,
+.thumbnail,
+.alert,
+.progress,
+.panel,
+.well,
+.modal-content,
+.tooltip-inner,
+.popover,
+.popover-title,
+.carousel-indicators li {
+    border-radius:0 !important;
+}
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
