@@ -2895,7 +2895,7 @@ class admin extends Controller
 						{
                             $result = $dashModel->addCashAccount($cashName);
                             $result = $dashModel->getCashAccountByName($cashName);
-                            print_r$result->fetch_assoc();
+                            print_r($result->fetch_assoc());
 							$result = $dashModel->addCash($cashAccount, $cashAmount, $cashNote);
 							if($result)
 							{
